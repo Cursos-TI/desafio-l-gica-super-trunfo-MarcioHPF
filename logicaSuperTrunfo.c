@@ -7,7 +7,7 @@
 
 int main() {
     // Declara as variáveis para as duas cartas
-    int popA, popB, pturA, pturB;
+    int popA, popB, pturA, pturB, pontoA, pontoB;
     char estadoA[3], estadoB[3]; 
     char codA[10], codB[10]; 
     char cidadeA[50], cidadeB[50];
@@ -91,6 +91,74 @@ int main() {
     printf("A densidade populacional da carta B é: %.2f \n", denB);
     printf("O PIB per capita da carta B é: %.2f \n", pibcB);
 
+    printf("-------------- HORA DO DUELO -------------\n");   // Coloca uma linha para separar os dados das cartas
+    // Compara as populações
+    if (popA > popB) {
+        pontoA = pontoA + 1;
+        printf("A população da carta A é maior! +1 ponto para A!\n");
+        }else{
+            pontoB = pontoB +1;
+            printf("A população da carta B é maior! +1 ponto para B!\n");
+        }
+
+    // Compara as áreas
+    printf("--------------------------------------------------\n");
+    if (areaA > areaB) {
+        pontoA = pontoA + 1;
+        printf("A área da carta A é maior! +1 ponto para A!\n");
+        }else{
+            pontoB = pontoB +1;
+            printf("A área da carta B é maior! +1 ponto para B!\n");
+        }
+
+    // Compara os PIBs
+    printf("--------------------------------------------------\n");
+    if (pibA > pibB) {
+        pontoA = pontoA + 1;
+        printf("O PIB da carta A é maior! +1 ponto para A!");
+        }else{
+            pontoB = pontoB +1;
+            printf("O PIB da carta B é maior! +1 ponto para B!");
+        }
+
+    // Compara o número de pontos turísticos
+    printf("--------------------------------------------------\n");
+    if (pturA > pturB) {
+        pontoA = pontoA + 1;
+        printf("A quantidade de pontos turísticos da carta A é maior! +1 ponto para A!");
+        }else{
+            pontoB = pontoB +1;
+            printf("A quantidade de pontos turísticos da carta B é maior! +1 ponto para B!");
+        }
+    
+    // Compara a Densidade Populacional
+    printf("--------------------------------------------------\n");
+    if (denA > denB) {
+        pontoA = pontoA + 1;
+        printf("A densidade populacional da carta A é maior! +1 ponto para A!");
+        }else{
+            pontoB = pontoB +1;
+            printf("A densidade populacional da carta B é maior! +1 ponto para B!");
+        }
+    
+    // Compara o PIB per capita    
+    printf("--------------------------------------------------\n");
+    if (pibcA > pibcB) {
+        pontoA = pontoA + 1;
+        printf("O PIB per capita da carta A é maior! +1 ponto para A!");
+        }else{
+            pontoB = pontoB +1;
+            printf("O PIB per capita da carta B é maior! +1 ponto para B!");
+        } 
+
+    // Faz a contagem de ponto e mostra os resultados
+    printf("--------------------------------------------------\n");
+    if (pontoA > pontoB){
+        printf("A carta A fez %d pontos e é a vencedora!", pontoA);
+    }else {
+        printf("A carta B fez %d pontos e é a vencedora!", pontoB);
+    }
+    
     return 0;
 }
 
