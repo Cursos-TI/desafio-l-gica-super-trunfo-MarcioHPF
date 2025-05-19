@@ -11,7 +11,7 @@ int main() {
     char estadoA[3], estadoB[3]; 
     char codA[10], codB[10]; 
     char cidadeA[50], cidadeB[50];
-    float areaA, areaB, pibA, pibB;
+    float areaA, areaB, pibA, pibB, denA, denB, pibcA, pibcB;
 
     // Pede e recebe as variáveis para a primeira carta
     printf("Primeira Carta\n");
@@ -70,7 +70,26 @@ int main() {
 
     printf("A Carta B tem os seguintes dados: \n");
     printf("Estado: %s \nCódigo: %s%s \nNome da Cidade: %s \nPopulação: %d\n", estadoB, estadoB, codB, cidadeB, popB);
-    printf("Área: %.2fkm² \nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d", areaB, pibB, pturB);
+    printf("Área: %.2fkm² \nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n", areaB, pibB, pturB);
+
+    //Calcula a Densidade Populacional e PIB Per capita
+    //Dados das Cartas A
+    denA = popA / areaA;
+    pibcA = pibA / popA;
+
+    //Dados das Cartas B
+    denB = popB / areaB;
+    pibcB = pibB / popB;
+
+    printf("--------------------------------------------------\n");   // Coloca uma linha para separar os dados das cartas
+    // Mostra a Densidade Populaciona e PIB per capita da carta A
+    printf("A densidade populacional da carta A é: %.2f \n", denA);
+    printf("O PIB per capita da carta A é: %.2f \n", pibcA);
+
+    printf("--------------------------------------------------\n");   // Coloca uma linha para separar os dados das cartas
+    // Mostra a Densidade Populaciona e PIB per capita da carta B
+    printf("A densidade populacional da carta B é: %.2f \n", denB);
+    printf("O PIB per capita da carta B é: %.2f \n", pibcB);
 
     return 0;
 }
