@@ -115,40 +115,40 @@ int main() {
     printf("--------------------------------------------------\n");
     if (pibA > pibB) {
         pontoA = pontoA + 1;
-        printf("O PIB da carta A é maior! +1 ponto para A!");
+        printf("O PIB da carta A é maior! +1 ponto para A!\n");
         }else{
             pontoB = pontoB +1;
-            printf("O PIB da carta B é maior! +1 ponto para B!");
+            printf("O PIB da carta B é maior! +1 ponto para B!\n");
         }
 
     // Compara o número de pontos turísticos
     printf("--------------------------------------------------\n");
     if (pturA > pturB) {
         pontoA = pontoA + 1;
-        printf("A quantidade de pontos turísticos da carta A é maior! +1 ponto para A!");
+        printf("A quantidade de pontos turísticos da carta A é maior! +1 ponto para A!\n");
         }else{
             pontoB = pontoB +1;
-            printf("A quantidade de pontos turísticos da carta B é maior! +1 ponto para B!");
+            printf("A quantidade de pontos turísticos da carta B é maior! +1 ponto para B!\n");
         }
     
     // Compara a Densidade Populacional
     printf("--------------------------------------------------\n");
     if (denA > denB) {
         pontoA = pontoA + 1;
-        printf("A densidade populacional da carta A é maior! +1 ponto para A!");
+        printf("A densidade populacional da carta A é maior! +1 ponto para A!\n");
         }else{
             pontoB = pontoB +1;
-            printf("A densidade populacional da carta B é maior! +1 ponto para B!");
+            printf("A densidade populacional da carta B é maior! +1 ponto para B!\n");
         }
     
     // Compara o PIB per capita    
     printf("--------------------------------------------------\n");
     if (pibcA > pibcB) {
         pontoA = pontoA + 1;
-        printf("O PIB per capita da carta A é maior! +1 ponto para A!");
+        printf("O PIB per capita da carta A é maior! +1 ponto para A!\n");
         }else{
             pontoB = pontoB +1;
-            printf("O PIB per capita da carta B é maior! +1 ponto para B!");
+            printf("O PIB per capita da carta B é maior! +1 ponto para B!\n");
         } 
 
     // Faz a contagem de ponto e mostra os resultados
